@@ -1,0 +1,108 @@
+@import "../../../styles/mixins";
+
+.wrapper {
+  border-radius: 24px;
+
+  /* shadow-popover */
+  box-shadow:
+    0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  @include mobile() {
+    width: 100%;
+  }
+}
+.gradient {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #3EBFFF 0%, #FF711E 100%);
+}
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  @include mobile() {
+   height: auto;
+    max-height: 200px;
+  }
+}
+.content {
+  padding: 24px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  .heading {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+
+    /* Heading/headingXl */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; /* 150% */
+    margin-bottom: 8px;
+  }
+  .subHeading {
+    p {
+      color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+
+      /* Body 16 Pt./Regular */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      text-align: left;
+      margin-bottom: 32px;
+      /* Truncate to 2 lines */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include mobile() {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .desc {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.58));
+
+    /* Body 14 Pt./Regular */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    .author {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+
+      /* Body 16 Pt./Medium */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid rgba(128, 128, 128, 0.47);
+        padding: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.formWrapper {
+  .formGroup {
+    position: relative;
+    margin-bottom: 20px;
+    label {
+      display: block;
+      color: #292929;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      padding:0 16px ;
+      margin-bottom: 8px;
+    }
+    input,select {
+      border-radius: 8px;
+      border: 1.5px solid #b2adad;
+      padding: 13px 16px;
+      color: black;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      width: 100%;
+      &::placeholder {
+        color: #b2adad;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  .cta {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 12px;
+    background: var(--Saffron-40, #ffa651);
+    box-shadow: 2px 2px 4px 0px rgba(22, 22, 22, 0.12);
+    padding: 10px 24px;
+    border: none;
+    color: var(--Greys-70, #464646);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+}
+.phoneContainer{
+  border-radius: 8px;
+  border: 1.5px solid #b2adad;
+  padding: 13px 16px;
+  input{
+    width: 100%;
+    border: none  !important;
+    padding: 0 !important;
+    &::placeholder {
+      color: #b2adad;
+    }
+  }
+}

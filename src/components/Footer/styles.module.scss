@@ -1,0 +1,203 @@
+@import "../../styles/mixins";
+.wrapper {
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+  @include mobile() {
+    margin-top: 40px;
+  }
+}
+.top {
+  background:
+    url("/images/dot-pattern.svg") repeat,
+    url("/images/footer-bg.svg") no-repeat;
+  background-size:
+    10px 10px,
+    cover;
+
+  background-blend-mode: overlay;
+  padding: 100px 0;
+  @include mobile() {
+    padding: 65px 0px;
+  }
+}
+.titleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mobile() {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .title {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 42.667px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 59.733px; /* 140% */
+    @include mobile() {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+.bottomContainer{
+  background: #fff;
+}
+.navSection {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile() {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .logoContainer {
+    .logo {
+      width: 186px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .caption {
+      color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.6));
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-size: 12.8px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17.067px; /* 133.333% */
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    @include mobile() {
+      column-gap: 26px;
+      row-gap: 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+    }
+    li {
+      @include mobile() {
+        display: flex;
+      }
+      a {
+        padding: 10px 25px;
+        color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+        font-feature-settings:
+          "clig" off,
+          "liga" off;
+        font-size: 14.933px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @include mobile() {
+          padding: 10px 0;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          color: rgba(99, 99, 99, 0.88);
+        }
+      }
+    }
+  }
+}
+.divider {
+  border-radius: 8.533px;
+  opacity: 0.2;
+  background: #6c6c6c;
+  width: 100%;
+  height: 2px;
+}
+.mobiledivider {
+  display: none;
+
+  border-radius: 8.533px;
+  opacity: 0.2;
+  background: #6c6c6c;
+  width: 100%;
+  height: 2px;
+  @include mobile() {
+    display: block;
+  }
+}
+.copySectioon {
+  padding: 30px 0;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .copy {
+      color: #051225;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-size: 12.8px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17.067px; /* 133.333% */
+      @include mobile() {
+        display: none;
+      }
+    }
+    .social {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      @include mobile() {
+        justify-content: space-between;
+        width: 100%;
+      }
+      a {
+        color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.6));
+        font-feature-settings:
+          "clig" off,
+          "liga" off;
+        font-size: 12.8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17.067px; /* 133.333% */
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        .linkedin {
+          width: 82px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.mobileCopy {
+  display: none;
+  @include mobile() {
+    display: block;
+    padding: 24px 0;
+    color: #000;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.067px; /* 121.905% */
+  }
+}

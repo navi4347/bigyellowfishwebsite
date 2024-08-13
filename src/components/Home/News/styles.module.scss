@@ -1,0 +1,189 @@
+@import "../../../styles/mixins";
+.wrapper {
+  background: url("/images/articles-bg.svg") no-repeat top center;
+  padding: 65px 0 0;
+  background-size: 100%;
+  position: relative;
+  @include mobile() {
+    background-size: cover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--Binary-White, #fff);
+    opacity: 1;
+    z-index: 0;
+    @include mobile() {
+      top: 50%;
+    }
+  }
+}
+.title {
+  margin-bottom: 18px;
+  color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.82));
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  @include mobile() {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.subTitle {
+  color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.6));
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  @include mobile() {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.slider{
+  position: relative;
+  z-index: 1;
+  margin: 48px auto 0;
+  max-width: 1120px;
+  @include mobile() {
+   max-width: 100%;
+  }
+  .card{
+    //max-width: 327px;
+    height: 100%;
+    border-radius: 16px;
+    background: var(--Binary-White, #fff);
+    box-shadow:
+            0px 2.667px 5.333px -2.667px rgba(23, 24, 24, 0.08),
+            0px 7.111px 17.778px -3.556px rgba(23, 24, 24, 0.12);
+    padding: 35px 28px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 40px;
+    @include mobile() {
+      padding: 24px;
+      max-width: 100%;
+    }
+    .date {
+      color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.6));
+      font-feature-settings:
+              "clig" off,
+              "liga" off;
+      font-size: 12.444px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17.778px; /* 142.857% */
+      margin-bottom: 7px;
+    }
+    h6 {
+      color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.82));
+      font-feature-settings:
+              "clig" off,
+              "liga" off;
+      font-size: 17.778px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24.889px; /* 140% */
+      margin-bottom: 28px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 74.667px; /* 3 lines of 24.889px each */
+
+      @include mobile() {
+        font-size: 16px;
+        line-height: 22.4px;
+        max-height: 67.2px; /* 3 lines of 22.4px each */
+      }
+    }
+    .author {
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: auto;
+      img {
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        @include mobile() {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .text {
+        color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.82));
+        font-feature-settings:
+                "clig" off,
+                "liga" off;
+        font-size: 14.222px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21.333px; /* 150% */
+        @include mobile() {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      .subtext {
+        color: var(--Text---Light-BG-Light-Emphasis, rgba(32, 25, 21, 0.4));
+        font-feature-settings:
+                "clig" off,
+                "liga" off;
+        font-size: 12.444px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17.778px;
+        @include mobile() {
+          font-size: 11px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+.newCardList {
+  list-style: none;
+  margin-top: 48px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 48px auto 0;
+  padding-bottom: 64px;
+  @include mobile() {
+    overflow-x: auto;
+    display: flex;
+    &::webkit-scrollbar {
+      display: none;
+    }
+  }
+  a {
+    height: 100%;
+  }
+  li {
+
+  }
+}

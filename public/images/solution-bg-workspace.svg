@@ -1,0 +1,27 @@
+<svg width="1280" height="566" viewBox="0 0 1280 566" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_77_7311" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1280" height="566">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1280 0H0V520.065H590.174C592.854 520.065 595.394 521.258 597.103 523.321L627.682 560.211C634.081 567.93 645.919 567.93 652.318 560.211L682.897 523.321C684.606 521.258 687.146 520.065 689.826 520.065H1280V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_77_7311)">
+<g filter="url(#filter0_f_77_7311)">
+<ellipse cx="654" cy="870" rx="1377" ry="791" fill="url(#paint0_diamond_77_7311)"/>
+<ellipse cx="654" cy="870" rx="1377" ry="791" fill="url(#pattern0_77_7311)" fill-opacity="0.4"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_77_7311" x="-777" y="25" width="2862" height="1690" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="27" result="effect1_foregroundBlur_77_7311"/>
+</filter>
+<pattern id="pattern0_77_7311" patternContentUnits="objectBoundingBox" width="0.00290487" height="0.00505689">
+<use xlink:href="#image0_77_7311" transform="scale(0.000363108 0.000632111)"/>
+</pattern>
+<radialGradient id="paint0_diamond_77_7311" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(654.001 79) rotate(90) scale(957 2793.73)">
+<stop stop-color="#FF9631"/>
+<stop offset="0.370461" stop-color="#FFC083"/>
+<stop offset="1" stop-color="#6DABFF"/>
+</radialGradient>
+<image id="image0_77_7311" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAsSURBVHgBvY6hDQAACMMG/1/GUyMTJBiCIKFmYqIFrth0MIJaxx9ylrezNiTl3Aq8ISlz0QAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

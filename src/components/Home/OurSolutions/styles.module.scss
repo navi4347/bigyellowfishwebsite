@@ -1,0 +1,212 @@
+@import "../../../styles/mixins";
+
+.wrapper {
+  padding: 150px 0;
+  position: relative;
+  @include mobile() {
+    padding: 50px 0;
+  }
+
+  h4 {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+    text-align: center;
+
+    /* Heading/heading4xl */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; /* 130% */
+    margin-bottom: 16px;
+    @include mobile() {
+      font-size: 28px;
+      line-height: normal;
+      padding: 0 16px;
+    }
+  }
+  p {
+    color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.58));
+    text-align: center;
+
+    /* Heading/headingXl */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    @include mobile() {
+      font-size: 18px;
+      line-height: normal;
+      padding: 0 16px;
+    }
+  }
+}
+.container {
+  @include mobile() {
+    padding: 0;
+  }
+}
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+  .bgImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+
+    @include mobile() {
+      height: 40%;
+      top: unset;
+      object-fit: cover;
+    }
+  }
+}
+
+.list {
+  padding-top: 60px;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-bottom: 100px;
+  overflow: auto; /* Ensures horizontal scrolling */
+
+  @include mobile() {
+    display: none;
+    position: relative;
+
+    padding: 40px 16px 60px;
+    justify-content: unset;
+    &::webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.outer {
+  width: 100%;
+  padding: 15px 10px;
+}
+.card {
+  padding: 16px;
+  border-radius: 42px;
+  background: var(--Greys-0, #fff);
+  box-shadow:
+    4px 4px 12px 0px rgba(0, 0, 0, 0.12),
+    0px 0px 8px 2px rgba(0, 0, 0, 0.04) inset;
+  //border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  @include mobile() {
+    width: 100% !important;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    @include mobile() {
+      transform: scale(1);
+    }
+    .arrow {
+      transform: scale(1.1);
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    @include mobile() {
+      display: none;
+    }
+  }
+  &:hover .bg {
+    transform: translateY(0);
+  }
+  &:nth-child(1) .bg {
+    background: linear-gradient(180deg, #fff6ee 0%, #ffa651 100%);
+  }
+
+  &:nth-child(2) .bg {
+    //border-color: #00806e;
+    background: linear-gradient(180deg, #f2fffd 0%, #0dcea9 100%);
+  }
+
+  &:nth-child(3) .bg {
+    background: linear-gradient(180deg, #f0f4f9 0%, #3c86eb 100%);
+    //border-color: #6dabff;
+  }
+  @include mobile() {
+    width: 300px;
+  }
+  .imgContainer {
+    position: relative;
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      box-shadow:
+        0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+        0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+      border-radius: 32px;
+    }
+    .arrow {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 44px;
+      height: 44px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .caption {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 150% */
+    max-width: 200px;
+    margin: 16px auto 0;
+    position: relative;
+  }
+}
+.sliderContainer {
+  width: 100%;
+  display: none;
+  margin-top: 40px;
+  @include mobile() {
+    display: block;
+  }
+}
+.sliderIndicator {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: none;
+  @include mobile() {
+    display: flex;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 0.6;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+    &.active {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import "../../../styles/mixins";
+.wrapper {
+  padding: 45px 0;
+  h5 {
+    color: var(--Greys-80, #2c2c2c);
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+
+    /* heading3xl */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px; /* 137.5% */
+    margin-bottom: 10px;
+  }
+  .divider {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .listCountry {
+    color: var(--Greys-60, #616161);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    text-align: center;
+  }
+}
+.teamList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  margin-top: 48px;
+  gap: 40px;
+  @include mobile() {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    column-gap: 24px;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+
+    .card {
+      scroll-snap-align: start;
+      flex: 0 0 calc(50% - 12px); // Adjust to maintain two items per row
+    }
+  }
+  .card {
+    .imageContainer {
+      border-radius: 12px;
+      box-shadow:
+        0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+        0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+      overflow: hidden;
+      img {
+        width: 100%;
+
+        height: 100%;
+        margin-bottom: -7px;
+        object-fit: cover;
+        @include mobile() {
+          height: 180px;
+          width: 180px;
+        }
+      }
+    }
+    .details {
+      padding: 16px 0 0;
+      .name {
+        color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.82));
+        text-align: center;
+        font-feature-settings:
+          "clig" off,
+          "liga" off;
+
+        /* headingMd */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+        @include mobile() {
+          font-size: 14px;
+          line-height: normal;
+        }
+      }
+      .designation {
+        color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.6));
+        text-align: center;
+        font-feature-settings:
+          "clig" off,
+          "liga" off;
+
+        /* Body Medium/Regular */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        @include mobile() {
+          font-size: 12px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

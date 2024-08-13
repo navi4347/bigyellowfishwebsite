@@ -1,0 +1,24 @@
+<svg width="417" height="701" viewBox="0 0 417 701" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_128_21611)">
+<rect width="417" height="701" fill="url(#paint0_linear_128_21611)"/>
+<rect width="417" height="701" fill="url(#pattern0_128_21611)" fill-opacity="0.4"/>
+<circle cx="454" cy="-47" r="324" fill="white" fill-opacity="0.24"/>
+<circle cx="454" cy="-47" r="323.655" stroke="white" stroke-opacity="0.01" stroke-width="0.689362"/>
+<circle cx="-36" cy="773" r="324" fill="white" fill-opacity="0.24"/>
+<circle cx="-36" cy="773" r="323.655" stroke="white" stroke-opacity="0.01" stroke-width="0.689362"/>
+</g>
+<defs>
+<pattern id="pattern0_128_21611" patternContentUnits="objectBoundingBox" width="0.0191847" height="0.0114123">
+<use xlink:href="#image0_128_21611" transform="scale(0.00239808 0.00142653)"/>
+</pattern>
+<linearGradient id="paint0_linear_128_21611" x1="487.589" y1="701" x2="75.516" y2="-169.282" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9631"/>
+<stop offset="0.643633" stop-color="#FFC083"/>
+<stop offset="1" stop-color="#6DABFF"/>
+</linearGradient>
+<clipPath id="clip0_128_21611">
+<rect width="417" height="701" fill="white"/>
+</clipPath>
+<image id="image0_128_21611" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAsSURBVHgBvY6hDQAACMMG/1/GUyMTJBiCIKFmYqIFrth0MIJaxx9ylrezNiTl3Aq8ISlz0QAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

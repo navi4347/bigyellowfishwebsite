@@ -1,0 +1,68 @@
+@import '../../styles/mixins';
+.wrapper {
+  padding: 32px;
+  border-top: 2px solid #fb930f;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16) inset;
+  display: flex;
+  gap: 75px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  @include mobile() {
+   flex-direction: column;
+    padding: 32px 24px;
+    gap: 24px;
+  }
+}
+.content {
+  .title {
+    color: #000;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    @include mobile() {
+     text-align: center;
+    }
+  }
+  .text {
+    color: #787878;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%; /* 16.52px */
+    @include mobile() {
+      text-align: center;
+    }
+  }
+}
+.ctaContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  .secondary {
+    padding: 12px 56px;
+    color: #fb9411;
+
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%; /* 14.16px */
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 1px solid #fb9411;
+  }
+}

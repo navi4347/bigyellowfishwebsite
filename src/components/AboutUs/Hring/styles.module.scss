@@ -1,0 +1,106 @@
+@import "../../../styles/mixins";
+.wrapper {
+  padding: 144px 0 70px;
+  @include mobile() {
+    padding: 60px 0 40px;
+  }
+  h5 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124%; /* 49.6px */
+    letter-spacing: 0.4px;
+    margin-bottom: 42px;
+    text-align: center;
+    @include mobile() {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 124%;
+      letter-spacing: 0.24px;
+    }
+  }
+}
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  .card {
+    border-radius: 18px;
+    background: #fff;
+    box-shadow:
+      2px 3px 8px 0px rgba(0, 0, 0, 0.16),
+      0px 0px 8px 0px rgba(0, 0, 0, 0.1) inset;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    @include mobile() {
+      flex-direction: column;
+      width: 100%;
+    }
+    .content {
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+      @include mobile() {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 18px 0 18px;
+      }
+      .title {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 124%; /* 29.76px */
+        letter-spacing: 0.24px;
+        margin-bottom: 16px;
+        @include mobile() {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: normal; /* 22.32px */
+          letter-spacing: 0.18px;
+          text-align: center;
+        }
+      }
+      p {
+        color: #8c8c8c;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124%; /* 22.32px */
+        letter-spacing: 0.18px;
+        @include mobile() {
+          font-size: 12px;
+          line-height: normal; /* 17.36px */
+          letter-spacing: 0.14px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+      img {
+        filter: invert(1);
+        @include mobile() {
+          display: none;
+        }
+      }
+    }
+    .svgDesktop {
+      display: block;
+      @include mobile() {
+        display: none;
+      }
+    }
+    .svgMobile {
+      display: none;
+      @include mobile() {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../../styles/mixins";
+.wrapper {
+  margin-top: -160px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  @include mobile() {
+    margin: 20px;
+  }
+}
+.cardCover {
+  padding: 3px;
+  background: linear-gradient(to bottom, #ffff 50%, #389cff);
+  border-radius: 26px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+  .card {
+    border-radius: 24px;
+    border: 3px solid #fff;
+    background: #fff;
+
+    padding: 8px 80px 24px;
+    @include mobile() {
+      padding: 30px;
+    }
+
+    h5 {
+      color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+      text-align: center;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44px; /* 220% */
+      @include mobile() {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 70px;
+  @include mobile() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #7e7a77;
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+  }
+}

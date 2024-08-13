@@ -1,0 +1,7 @@
+SMTP_DEBUG=0
+SMTP_HOST=smtp.office365.com
+SMTP_USER=support@bigyellowfish.io
+SMTP_PASS=MiG]_ez*18i6
+SMTP_AUTH=true
+SMTP_SECURE=tls
+SMTP_PORT=587

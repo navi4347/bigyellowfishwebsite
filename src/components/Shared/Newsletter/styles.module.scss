@@ -1,0 +1,107 @@
+.wrapper {
+  background: #566ce8;
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 576px) {
+    padding: 40px 25px 40px;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.content {
+  flex: 1;
+  z-index: 1;
+  h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121%; /* 48.4px */
+    letter-spacing: 1.2px;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 100px;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 121%; /* 29.04px */
+    letter-spacing: 0.72px;
+    text-align: left;
+    @media screen and (max-width: 576px) {
+      text-align: center;
+      font-size: 16px;
+      color: #566ce8;
+    }
+  }
+}
+
+.inputContainer {
+  border-radius: 38.5px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  z-index: 1;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    padding: 30px;
+  }
+  input {
+    width: 400px;
+    padding: 0 20px;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121%; /* 29.04px */
+    letter-spacing: 0.72px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #7e7e7e;
+    }
+  }
+  button {
+    border-radius: 40.5px;
+    background: #566ce8;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%; /* 16.8px */
+    letter-spacing: 2.16px;
+  }
+}
+.underlay {
+  width: 850px;
+  height: 850px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: #cfd6ff;
+  position: absolute;
+  z-index: 0;
+  right: -300px;
+  @media screen and (max-width: 576px) {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+}

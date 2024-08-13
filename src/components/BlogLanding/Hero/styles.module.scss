@@ -1,0 +1,134 @@
+@import "../../../styles/mixins";
+.wrapper {
+  padding: 120px 0 80px;
+  position: relative;
+  @include mobile(){
+    padding: 120px 0 40px;
+  }
+  h1 {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+    text-align: center;
+    font-feature-settings:
+            "clig" off,
+            "liga" off;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 133.333% */
+    margin-bottom: 16px;
+    @include mobile(){
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 44px;
+    }
+  }
+  p {
+    color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.58));
+    text-align: center;
+
+    /* Heading/headingXl */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    max-width: 800px;
+    margin: 0 auto;
+    @include mobile(){
+      font-size: 20px;
+      font-style: normal;
+      line-height: 28px;
+    }
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.bottomBarUnderlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  background: #FFF7F0;
+}
+
+.tagContainer {
+  margin-top: 80px;
+  padding: 24px 0;
+  margin-bottom: 64px;
+  @include mobile(){
+    margin-top: 40px;
+    padding: 16px 0;
+    margin-bottom: 40px;
+  }
+  .heading {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+    text-align: center;
+
+    /* Heading/headingLg */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+  }
+  .tagList {
+    margin-top: 16px;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    @include mobile(){
+      flex-wrap: wrap;
+    }
+    .tagItem {
+      border-radius: 16px;
+      background: var(--Neutral-100, #f0eeeb);
+      mix-blend-mode: multiply;
+
+      box-shadow:
+              0px 0px 5px 0px rgba(23, 24, 24, 0.05),
+              0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+      padding: 4px 12px;
+      color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.58));
+      text-align: center;
+
+      /* Body 16 Pt./Regular */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      cursor: pointer;
+      &.active {
+        background: #fff;
+        color: #ff9631;
+        mix-blend-mode: unset;
+
+        /* shadow-card */
+        box-shadow:
+                0px 0px 5px 0px rgba(23, 24, 24, 0.05),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .divider {
+      border-radius: 1px;
+      background: #f0eeeb;
+      mix-blend-mode: multiply;
+      height: 24px;
+      width: 2px;
+    }
+  }
+}
+.formContainer{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}

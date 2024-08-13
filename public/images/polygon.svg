@@ -1,0 +1,21 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M62 3.4641C65.7128 1.32051 70.2872 1.32051 74 3.4641L120.89 30.5359C124.603 32.6795 126.89 36.641 126.89 40.9282V95.0718C126.89 99.359 124.603 103.321 120.89 105.464L74 132.536C70.2872 134.679 65.7128 134.679 62 132.536L15.1103 105.464C11.3975 103.321 9.11027 99.359 9.11027 95.0718V40.9282C9.11027 36.641 11.3975 32.6795 15.1103 30.5359L62 3.4641Z" fill="url(#paint0_diamond_1702_29869)"/>
+<path d="M62 3.4641C65.7128 1.32051 70.2872 1.32051 74 3.4641L120.89 30.5359C124.603 32.6795 126.89 36.641 126.89 40.9282V95.0718C126.89 99.359 124.603 103.321 120.89 105.464L74 132.536C70.2872 134.679 65.7128 134.679 62 132.536L15.1103 105.464C11.3975 103.321 9.11027 99.359 9.11027 95.0718V40.9282C9.11027 36.641 11.3975 32.6795 15.1103 30.5359L62 3.4641Z" fill="url(#pattern0_1702_29869)" fill-opacity="0.4"/>
+<path d="M68 31.3262L100.09 49.6632V86.3374L68 104.674L35.9102 86.3374V49.6632L68 31.3262Z" fill="url(#paint1_linear_1702_29869)"/>
+<path d="M100.09 49.6633L68 31.3262L35.9102 49.6633M100.09 49.6633V86.3374L68 104.674M100.09 49.6633L68 67.6786M68 104.674L35.9102 86.3374V49.6633M68 104.674V67.6786M35.9102 49.6633L68 67.6786" stroke="#2C2C2C" stroke-width="6" stroke-linejoin="round"/>
+<defs>
+<pattern id="pattern0_1702_29869" patternContentUnits="objectBoundingBox" width="0.0588235" height="0.0588235">
+<use xlink:href="#image0_1702_29869" transform="scale(0.00735294)"/>
+</pattern>
+<radialGradient id="paint0_diamond_1702_29869" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(68 -2.53436e-06) rotate(90) scale(184.109 308.737)">
+<stop stop-color="#FF9631"/>
+<stop offset="0.370461" stop-color="#FFC083"/>
+<stop offset="1" stop-color="#6DABFF"/>
+</radialGradient>
+<linearGradient id="paint1_linear_1702_29869" x1="100.09" y1="50.0453" x2="41.6652" y2="93.0161" gradientUnits="userSpaceOnUse">
+<stop stop-color="#64A1F2"/>
+<stop offset="1" stop-color="#3073CC"/>
+</linearGradient>
+<image id="image0_1702_29869" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAsSURBVHgBvY6hDQAACMMG/1/GUyMTJBiCIKFmYqIFrth0MIJaxx9ylrezNiTl3Aq8ISlz0QAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

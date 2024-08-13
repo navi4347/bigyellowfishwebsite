@@ -1,0 +1,94 @@
+@import "../../../styles/mixins";
+.wrapper {
+  padding: 45px 0;
+  h3 {
+    color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.82));
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 200% */
+    margin-bottom: 35px;
+    text-align: center;
+    @include mobile() {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  @include mobile() {
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .card {
+    flex: 1;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow:
+      2px 3px 8px 0px rgba(0, 0, 0, 0.16),
+      0px 0px 4px 0px rgba(0, 0, 0, 0.1) inset;
+    @include mobile() {
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+    }
+    h4 {
+      padding: 24px 24px 16px;
+      color: var(--Greys-80, #2c2c2c);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 150% */
+      text-align: center;
+      @include mobile() {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    p {
+      padding: 0 24px 24px;
+      color: var(--Greys-80, #2c2c2c);
+      text-align: center;
+      font-feature-settings:
+        "clig" off,
+        "liga" off;
+
+      /* Body Medium/Regular */
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      @include mobile() {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+    .iconContainer {
+      padding: 0 24px 24px;
+      text-align: center;
+      img {
+        @include mobile() {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

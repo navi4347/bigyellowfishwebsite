@@ -1,0 +1,32 @@
+.sideArea {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  bottom: 20px;
+  z-index: 1;
+  @media (max-width: 768px) {
+    bottom: unset;
+    top: -20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+.shareContainer {
+  position: sticky; // Sticky position
+  top: 150px; // Distance from the top when scrolling
+  right: 0; // Align to the right
+  height: fit-content; // Fit the height to its content
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Icons should stack vertically
+  align-items: flex-end; // Center items horizontally
+  gap: 10px; // Space between buttons
+
+  z-index: 2;
+
+  margin-left: auto;
+  @media (max-width: 768px) {
+    position: relative;
+    top: 0px;
+    flex-direction: row;
+  }
+}

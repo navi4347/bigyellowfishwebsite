@@ -1,0 +1,105 @@
+@import "../../../styles/mixins";
+.wrapper {
+  padding: 150px 0;
+  position: relative;
+  @include mobile() {
+    padding: 92px 0;
+  }
+
+  h2 {
+    color: var(--Greys-80, #2c2c2c);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    margin-bottom: 16px;
+    @include mobile() {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+  }
+  p {
+    color: var(--Greys-80, #2c2c2c);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 48px;
+    @include mobile() {
+      font-size: 16px;
+      line-height: normal;
+      margin-bottom: 32px;
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 88px;
+    justify-content: center;
+    @include mobile() {
+      gap: 20px;
+    }
+    li {
+      text-align: center;
+      img {
+        @include mobile() {
+          width: 35px;
+          height: 35px;
+          object-fit: contain;
+        }
+      }
+      h3 {
+        margin-top: 13px;
+        color: var(--Greys-70, #464646);
+        text-align: center;
+        font-feature-settings:
+          "clig" off,
+          "liga" off;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 130% */
+        @include mobile() {
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 21.517px;
+        }
+      }
+    }
+  }
+}
+.ctaHeading {
+  margin-top: 148px;
+  color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+  @include mobile() {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+   margin-top: 52px;
+  }
+}
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}

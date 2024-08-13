@@ -1,0 +1,13 @@
+@import './mixins.scss';
+.mobileView{
+  display: none;
+  @include mobile() {
+    display: block;
+  }
+}
+.desktopView{
+  display: block;
+  @include mobile() {
+    display: none;
+  }
+}

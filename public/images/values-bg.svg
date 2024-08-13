@@ -1,0 +1,12 @@
+<svg width="1280" height="648" viewBox="0 0 1280 648" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.56" y="-122" width="1280" height="884" fill="url(#paint0_diamond_88_7845)"/>
+<circle cx="1214" cy="545" r="470" fill="white" fill-opacity="0.24"/>
+<circle cx="38" cy="34" r="470" fill="white" fill-opacity="0.24"/>
+<defs>
+<radialGradient id="paint0_diamond_88_7845" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(688.325 -490.018) rotate(92.036) scale(1360.22 3305.73)">
+<stop stop-color="#FF9631"/>
+<stop offset="0.643633" stop-color="#FFC083"/>
+<stop offset="1" stop-color="#6DABFF"/>
+</radialGradient>
+</defs>
+</svg>

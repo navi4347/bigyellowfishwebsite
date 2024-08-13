@@ -1,0 +1,77 @@
+@import '../../../styles/mixins';
+.wrapper {
+  padding: 180px 0 40px;
+  @include mobile(){
+    padding: 100px 0 40px;
+  }
+}
+.card {
+  border-radius: 32px;
+
+  box-shadow:
+    0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+
+  gap: 20px;
+  @include mobile(){
+    flex-direction: column;
+    gap: 0;
+  }
+  .content {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    @include mobile(){
+      padding: 24px;
+      order: 2;
+    }
+    .read {
+      display: flex;
+      gap: 6px;
+      color: var(--Text---Light-BG-Medium-Emphasis, rgba(32, 25, 21, 0.58));
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+    }
+    h1 {
+      color: var(--Text---Light-BG-High-Emphasis, rgba(32, 25, 21, 0.88));
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44px; /* 137.5% */
+      margin-top: 20px;
+      @include mobile(){
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 0px;
+      }
+    }
+    .authorContainer {
+      margin-top: auto;
+    }
+  }
+  .imgContainer {
+    flex: 2;
+    max-height: 450px;
+    min-height: 400px;
+    order: 2;
+    max-width: 500px;
+    @include mobile(){
+      max-height: 300px;
+      min-height: unset;
+      order: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

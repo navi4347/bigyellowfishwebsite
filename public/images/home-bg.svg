@@ -1,0 +1,15 @@
+<svg width="1280" height="851" viewBox="0 0 1280 851" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="1280" height="851" fill="url(#paint0_diamond_1702_29733)"/>
+<rect width="1280" height="851" fill="url(#pattern0_1702_29733)" fill-opacity="0.4"/>
+<defs>
+<pattern id="pattern0_1702_29733" patternContentUnits="objectBoundingBox" width="0.00625" height="0.00940071">
+<use xlink:href="#image0_1702_29733" transform="scale(0.00078125 0.00117509)"/>
+</pattern>
+<radialGradient id="paint0_diamond_1702_29733" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 -1.58584e-05) rotate(90) scale(1152.03 2905.76)">
+<stop stop-color="#FF9631"/>
+<stop offset="0.370461" stop-color="#FFC083"/>
+<stop offset="1" stop-color="#6DABFF"/>
+</radialGradient>
+<image id="image0_1702_29733" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAsSURBVHgBvY6hDQAACMMG/1/GUyMTJBiCIKFmYqIFrth0MIJaxx9ylrezNiTl3Aq8ISlz0QAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
